@@ -10,17 +10,13 @@ public class Developer {
     // so we make the constructor private
 
     private Developer() {}
-    
+
     /**
      * Get the name of the developer
      */
 
     public static String getName() {
-        // TODO: Change this to your name
-        // You may use just the name that is used on <https://bit.ly/cs156-s26-teams>
-        // i.e. your first name, or your first and initial of last name
-
-        return "Chris G.";
+        return "Kevin";
     }
 
     /**
@@ -37,7 +33,7 @@ public class Developer {
      * Get the developers team
      * @return developers team as a Java object
      */
-    
+
     public static Team getTeam() {
         // TODO: Change this to your team name
         Team team = new Team("s26-xx");
