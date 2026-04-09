@@ -6,6 +6,7 @@ import java.util.ArrayList;
  * A class to represent a team of developers.
  */
 public class Team {
+
     public String name;
     public ArrayList<String> members;
 
@@ -26,6 +27,7 @@ public class Team {
         this.name = name;
         this.members = new ArrayList<String>();
     }
+
     /**
      * Add a member to the team
      * @param member members name
@@ -33,6 +35,7 @@ public class Team {
     public void addMember(String member) {
         this.members.add(member);
     }
+
     /*
      * Get the name of the team
      * @return the name of the team
@@ -40,6 +43,7 @@ public class Team {
     public String getName() {
         return this.name;
     }
+
     /*
      * Get the members of the team
      * @return the members of the team
@@ -74,7 +78,9 @@ public class Team {
             return false;
         }
         Team other = (Team) obj;
-        return this.name.equals(other.name) && this.members.equals(other.members);
+        return (
+            this.name.equals(other.name) && this.members.equals(other.members)
+        );
     }
 
     /*
